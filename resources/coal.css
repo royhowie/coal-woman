@@ -1,0 +1,74 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul #menu {
+    list-style: none;
+    position: fixed;
+}
+ul #menu li {
+    display: inline-block;
+    text-decoration: none;
+}
+#fullPage .section {
+    max-width: 750px;
+    margin: 0 auto;
+    /*display: relative;*/
+}
+.section {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+    font-weight: 300;
+    max-width: 530px;
+    margin: 0 auto;
+}
+h1 { font-size: 6vh }
+h3 { font-size: 2.8vh }
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+img#coal-woman-main {
+    max-width: 750px;
+    z-index: -3;
+    position: absolute;
+    top: 0;
+    min-width: 700px;
+    margin: 0;
+}
+img#blue-bg {
+    max-width: 750px;
+    position: absolute;
+    top: 325px;
+    z-index: -2;
+}
+img#coin0, img#coin1 {
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.offset {
+    margin-top: 65%;
+}
+.allcaps {
+    text-transform: uppercase;
+}
+.strike {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+.strike:before {
+    background-color: #4682b4;
+    content: '';
+    display: block;
+    height: 2px;
+    position: relative;
+    margin: 5px auto;
+    width: 85%;
+}
