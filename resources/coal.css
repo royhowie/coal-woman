@@ -12,12 +12,18 @@ ul #menu li {
 #fullPage .section {
     max-width: 750px;
     margin: 0 auto;
-    /*display: relative;*/
 }
 .section {
     position: relative;
     min-height: 100%;
     overflow: hidden;
+}
+.section h1,
+.section h3 {
+    padding: 0px 8px;
+}
+#section0 {
+    background-color: #9BC7ED;
 }
 h1, h2, h3, h4, h5, h6, p {
     text-align: center;
@@ -33,7 +39,7 @@ img {
 }
 img#coal-woman-main {
     max-width: 750px;
-    z-index: -3;
+    z-index: 0;
     position: absolute;
     top: 0;
     min-width: 700px;
@@ -43,7 +49,11 @@ img#blue-bg {
     max-width: 750px;
     position: absolute;
     top: 325px;
-    z-index: -2;
+    z-index: 2;
+}
+#section0 .offset * {
+    position: relative;
+    z-index: 3;
 }
 img#coin0, img#coin1 {
     width: 200px;
