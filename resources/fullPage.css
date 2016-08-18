@@ -60,11 +60,13 @@ html.fp-enabled,
     float: left;
     position: relative;
 }
+.fp-controlArrow { display: none }
+/*
 .fp-controlArrow {
-    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    -moz-user-select: none; /* mozilla browsers */
-    -khtml-user-select: none; /* webkit (konqueror) browsers */
-    -ms-user-select: none; /* IE10+ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
     position: absolute;
     z-index: 4;
     top: 50%;
@@ -77,6 +79,7 @@ html.fp-enabled,
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
+*/
 .fp-controlArrow.fp-prev {
     left: 15px;
     width: 0;

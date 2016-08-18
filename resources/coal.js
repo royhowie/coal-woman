@@ -1,16 +1,21 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: ['coal', 'coin', 'info', 'donate'],
-
-        menu: '#menu',
         lockAnchors: false,
-        navigation: false,
+        loopHorizontal: false,
+        navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['coal', 'coin', 'info', 'donate'],
-        showActiveTooltip: true,
+        slidesNavPosition: 'bottom',
         slidesNavigation: true,
-        slidesNavPosition: 'bottom'
+    })
 
-        // scrollingSpeed: 1000
-    });
-});
+    // Map each picture to its corresponding slide.
+    ;[  '#susan-luery',
+        '#st-croix-pic',
+        '#maquette-aerial'
+    ].forEach(function (key, index) {
+        $(key).click(function () {
+            $.fn.fullpage.moveTo(3, index + 1)
+        })
+    })
+})
