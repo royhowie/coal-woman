@@ -104,6 +104,9 @@ img#maquette {
 .offset {
     margin-top: 65%;
 }
+.allcaps {
+    text-transform: uppercase;
+}
 .strike {
     display: block;
     overflow: hidden;
