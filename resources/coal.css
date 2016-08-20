@@ -25,12 +25,17 @@ ul #menu li {
 #section0 {
     background-color: #9BC7ED;
 }
+#section0 .offset * {
+    position: relative;
+    z-index: 3;
+}
 h1, h2, h3, h4, h5, h6, p {
     text-align: center;
     font-weight: 300;
     max-width: 530px;
     margin: 0 auto;
 }
+.text-left { text-align: left }
 h1 { font-size: 6vh }
 h3 { font-size: 2.8vh }
 div.img-box {
@@ -43,12 +48,32 @@ div.img-box {
     position: relative;
     width: 30%;
 }
-div.img-box h3 {
-    margin: 0 0 5px 0;
+div.img-box h3 { margin: 0 0 5px 0 }
+div.divider {
+    display: inline-block;
+}
+div.divider.left {
+    width: 32%;
+    float: left;
+    padding: 0.5vw 0 0 2.6vw;
+}
+div.divider.right {
+    width: 58%;
+    float: right;
 }
 img {
     width: 100%;
     margin: 0 auto;
+}
+div.img-center-box {
+    border: solid 1px red;
+    width: 100%;
+    margin: 0 auto;
+}
+img.centered {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
 }
 img#coal-woman-main {
     max-width: 750px;
@@ -64,21 +89,20 @@ img#blue-bg {
     top: 325px;
     z-index: 2;
 }
-#section0 .offset * {
-    position: relative;
-    z-index: 3;
+img#sketch-aerial-view {
+    width: 250px;
 }
 img#coin0, img#coin1 {
     width: 200px;
     display: block;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 25px auto;
+}
+img#maquette {
+    width: 250px;
 }
 .offset {
     margin-top: 65%;
-}
-.allcaps {
-    text-transform: uppercase;
 }
 .strike {
     display: block;
