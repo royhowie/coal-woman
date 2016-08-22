@@ -1,14 +1,9 @@
 $(document).ready(function() {
     var coinDropped = false
     $('#fullpage').fullpage({
-        anchors: [1, 2, 3, 4, 5, 6, 7, 8, 9].map(String),
-        // anchors: ['coal', 'coin', 'info', 'donate'],
+        anchors: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(String),
         lockAnchors: false,
         loopHorizontal: false,
-        // navigation: true,
-        // navigationPosition: 'right',
-        slidesNavPosition: 'bottom',
-        slidesNavigation: true,
         onLeave: function (index, next, direction) {
             console.log('args:', arguments)
 
