@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var coinDropped = false
     $('#fullpage').fullpage({
-        anchors: [1, 2, 3, 4, 5, 6].map(String),
+        anchors: [1, 2, 3, 4, 5, 6, 7, 8, 9].map(String),
         // anchors: ['coal', 'coin', 'info', 'donate'],
         lockAnchors: false,
         loopHorizontal: false,
