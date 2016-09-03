@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .text-left { text-align: left }
 h1 { font-size: 6vh }
-h2 { font-size: 3.2vh }
+h2 { font-size: 4.3vh }
 h3 { font-size: 2.8vh }
 div.img-box {
     cursor: pointer;
@@ -89,6 +89,29 @@ img#blue-bg {
     position: absolute;
     top: 325px;
     z-index: 2;
+}
+img#blue-bg-2 {
+    max-width: 750px;
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+}
+img#blue-bg-2 ~ div.raised * {
+    background-color: #9BC7ED;
+    max-width: 750px;
+    position: relative;
+    width: 100%;
+    z-index: 3 !important;
+}
+div.raised {
+    margin-top: 125px;
+}
+div.fill {
+    background-color: #9BC7ED;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 img#coin0, img#coin1 {
     width: 200px;
