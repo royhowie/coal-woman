@@ -128,6 +128,7 @@ img#maquette {
     @media only screen and (orientation:portrait) {
         /* font needs to be generally larger on mobile */
         h1, h2, h3, p { max-width: 85% }
+        h1 { font-size: 5vh }
         h2 { font-size:  3.1vh }
         p { font-size: 2vh }
 
@@ -149,13 +150,19 @@ img#maquette {
     }
 
     @media only screen and (orientation:landscape) {
+        /* otherwise part of the slide is cut off on Plus iPhones */
+        #section9 .fp-tableCell,
+        #section0 .fp-tableCell { vertical-align: top }
+
         /* font sizes need to be larger on smaller screens for reading */
         h2 { font-size: 5.3vh }
         h3 { font-size: 3.8vh }
+        /* except on the bio slide, which has a lot of text */
+        #section6 h2 { font-size:  4.5vh }
 
         /* move the blue wave image up so the first slide can fit the title */
-        img#blue-bg { top: 275px }
-        .offset { margin-top: 55% }
+        img#blue-bg { top: 200px }
+        .offset { margin-top: 46% }
 
         /* slide1 needs to be recentered on mobile */
         #section1 .divider h1 {
@@ -166,14 +173,11 @@ img#maquette {
         #section1 .left { width: 40% }
         #section1 .right { width: 50% }
 
-        /*
-            on slides which had a horizontal split, instead split the content
-            vertically (left and right) on mobile
-        */
+        /* split slides vertically instead of horizontally on mobile */
         .section.h-split h1,
         .section.h-split h2 {
             float: right;
-            margin-top: 10%;
+            margin-top: 25px;
             padding-left: 5px;
             width: 45%;
         }
@@ -184,5 +188,9 @@ img#maquette {
             float: left;
             max-width: 50%;
         }
+
+        /* since slide#10 aligns at the top, it needs to be moved up */
+        img#blue-bg-2 { top: 50px }
+        .raised { margin-top: 250px }
     }
 }
