@@ -1,134 +1,28 @@
+/***************************************
+********** GENERAL STYLING *************
+****************************************/
+
+/*********** TEXT STYLING ************/
 * {
     font-family: "Baskerville Old Face", Helvetica, Arial, sans-serif;
 }
-ul #menu {
-    list-style: none;
-    position: fixed;
-}
-ul #menu li {
-    display: inline-block;
-    text-decoration: none;
-}
-#fullPage .section {
-    max-width: 750px;
-    margin: 0 auto;
-}
-.section {
-    position: relative;
-    min-height: 100%;
-    overflow: hidden;
-}
-.section h1,
-.section h3 {
-    padding: 0px 8px;
-}
-#section0 {
-    background-color: #9BC7ED;
-}
-#section0 .offset * {
-    position: relative;
-    z-index: 3;
-}
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, p {
     text-align: center;
     font-weight: 300;
     max-width: 530px;
     margin: 0 auto;
 }
-.text-left { text-align: left }
 h1 { font-size: 6vh }
 h2 { font-size: 4.3vh }
 h3 { font-size: 2.8vh }
-div.img-box {
-    cursor: pointer;
-    display: inline-block;
-    height: 40vh;
-    margin: 2.5vh 0.25vw 0 0.25vw;
-    float: left;
-    padding: 0px;
-    position: relative;
-    width: 30%;
+.allcaps { text-transform: uppercase }
+.text-left { text-align: left }
+.section h1,
+.section h3 {
+    padding: 0px 8px;
 }
-div.img-box h3 { margin: 0 0 5px 0 }
-div.divider { display: inline-block }
-div.divider.left {
-    width: 32%;
-    float: left;
-    padding: 0.5vw 0 0 2.6vw;
-}
-div.divider.right {
-    width: 58%;
-    float: right;
-}
-img {
-    width: 100%;
-    margin: 0 auto;
-}
-img.w-auto { width: auto !important }
-img.w60 { width: 60% }
-img.w75 { width: 75% !important }
-div.img-center-box {
-    border: solid 1px red;
-    margin: 0 auto;
-    width: 100%;
-}
-img.centered {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-}
-img#coal-woman-main {
-    margin: 0;
-    max-width: 750px;
-    min-width: 700px;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
-img#blue-bg {
-    max-width: 750px;
-    position: absolute;
-    top: 325px;
-    z-index: 2;
-}
-img#blue-bg-2 {
-    max-width: 750px;
-    position: absolute;
-    top: 100px;
-    z-index: 2;
-}
-img#blue-bg-2 ~ div.raised * {
-    background-color: #9BC7ED;
-    max-width: 750px;
-    position: relative;
-    width: 100%;
-    z-index: 3 !important;
-}
-div.raised {
-    margin-top: 125px;
-}
-div.fill {
-    background-color: #9BC7ED;
-    height: 500px;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-img#coin0, img#coin1 {
-    width: 200px;
-    display: block;
-    text-align: center;
-    margin: 25px auto;
-}
-img#maquette {
-    width: 250px;
-}
-.offset {
-    margin-top: 65%;
-}
-.allcaps {
-    text-transform: uppercase;
-}
+
+/*********** SLIDE #1 H1 OUTLINE ************/
 .strike {
     display: block;
     overflow: hidden;
@@ -140,7 +34,155 @@ img#maquette {
     content: '';
     display: block;
     height: 2px;
-    position: relative;
     margin: 5px auto;
     width: 85%;
+}
+
+/*********** SECTION LAYOUT ************/
+.offset { margin-top: 65% }
+.section {
+    margin: 0 auto;
+    max-width: 750px;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#section0 { background-color: #9bc7ed }
+#section0 .offset * {
+    position: relative;
+    z-index: 3;
+}
+.raised {
+    background-color: #9BC7ED;
+    margin-top: 125px;
+}
+.raised * {
+    max-width: 750px;
+    position: relative;
+    width: 100%;
+    z-index: 3 !important;
+}
+.fill {
+    background-color: #9BC7ED;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/*********** IMAGE LAYOUT ************/
+div.divider { display: inline-block }
+div.divider.left {
+    width: 32%;
+    float: left;
+    padding: 0.5vw 0 0 2.6vw;
+}
+div.divider.right {
+    width: 58%;
+    float: right;
+}
+
+img.w-auto { width: auto !important }
+img.w60 { width: 60% }
+img.w75 { width: 75% !important }
+
+img {
+    width: 100%;
+    max-width: 750px;
+}
+
+img.centered {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+img#coal-woman-main {
+    margin: 0;
+    min-width: 700px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+img#blue-bg {
+    position: absolute;
+    top: 325px;
+    z-index: 2;
+}
+img#blue-bg-2 {
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+}
+img#coin0, img#coin1 {
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+}
+img#maquette {
+    width: 250px;
+}
+
+/*********** MEDIA QUERIES ************/
+@media (min-device-width: 320px) and (max-device-width: 768px) {
+    @media only screen and (orientation:portrait) {
+        /* font needs to be generally larger on mobile */
+        h1, h2, h3, p { max-width: 85% }
+        h2 { font-size:  3.1vh }
+        p { font-size: 2vh }
+
+        /* make sure these images stretch to the full width of the page */
+        #fullPage .section,
+        img#blue-bg,
+        img#blue-bg-2,
+        img#coal-woman-main {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        /* move 40px higher so it overlaps with the blue wave image */
+        .raised { margin-top: -40px }
+        /* cover the entire width so no white shows */
+        .raised * { min-width: 100% }
+        /* .fill on slide#10 needs to be longer to cover the screen entirely */
+        .fill { height: 1000px }
+    }
+
+    @media only screen and (orientation:landscape) {
+        /* font sizes need to be larger on smaller screens for reading */
+        h2 { font-size: 5.3vh }
+        h3 { font-size: 3.8vh }
+
+        /* move the blue wave image up so the first slide can fit the title */
+        img#blue-bg { top: 275px }
+        .offset { margin-top: 55% }
+
+        /* slide1 needs to be recentered on mobile */
+        #section1 .divider h1 {
+            width: 100%;
+            margin-top: 15%;
+            font-size: 7vh;
+        }
+        #section1 .left { width: 40% }
+        #section1 .right { width: 50% }
+
+        /*
+            on slides which had a horizontal split, instead split the content
+            vertically (left and right) on mobile
+        */
+        .section.h-split h1,
+        .section.h-split h2 {
+            float: right;
+            margin-top: 10%;
+            padding-left: 5px;
+            width: 45%;
+        }
+        /* hide the paragraph containing "the model" on mobile landscape */
+        .section.h-split p { display: none; }
+        /* images need to be largened too */
+        .section.h-split img {
+            float: left;
+            max-width: 50%;
+        }
+    }
 }
