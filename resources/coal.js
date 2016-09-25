@@ -5,4 +5,7 @@ $(document).ready(function() {
         navigation: false,
         slidesNavigation: false
     })
+    $('#coin0').click(function () {
+        $.fn.fullpage.moveTo(10)
+    })
 })

@@ -119,6 +119,7 @@ img#coin0, img#coin1 {
     text-align: center;
     margin: 25px auto;
 }
+img#coin0 { cursor: pointer }
 img#maquette {
     width: 250px;
 }
